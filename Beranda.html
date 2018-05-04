@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Institut Teknologi Kalimantan</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		@import url(main.css);
+		@import url(beranda.css);
+	   </style>
+	<header>
+		<h1 class="judul">Institut Teknologi Kalimantan</h1>
+		<button class="tombol">MENU</button>
+		<nav class="menu">
+			<div class="logo-flat">
+                <img alt="personal-logo" class="img-responsive" src="#">
+            </div>
+						<br>
+			<h4>MENU</h4>
+			<ul>
+				<li class="pelayanan-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="title-icon fa fa-user"></i>PELAYANAN</a>
+						<ul class="dropdown-menu">
+              <li class="active"><a href="Beranda.html">Beranda</a></li>
+						</ul>
+			</ul>
+		</nav>
+	</header>
+<br>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.tombol').click(function(){
+				$('.menu').toggleClass("slide-menu-tampil");
+			});
+		});
+	</script>
+</body>
+</html>
